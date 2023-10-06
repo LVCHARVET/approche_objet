@@ -12,8 +12,8 @@ public class TestPersonne {
 		Personne per1 = new Personne("CHARVET", "Louis-Valentin", adr1);
 		Personne per2 = new Personne("REMAUD", "Marion", adr2);
 		
-		//String n = per1.getNom();
-		//System.out.println(n);
+		String n = per1.getNom();
+		System.out.println(n);
 		per1.getNom();
 		per1.getPrenom();
 		per1.modifAdresse(adr2);
