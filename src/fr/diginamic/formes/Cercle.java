@@ -1,6 +1,6 @@
 package fr.diginamic.formes;
 
-public class Cercle extends Forme {
+public class Cercle implements Forme {
 	
 	double rayon;
 
