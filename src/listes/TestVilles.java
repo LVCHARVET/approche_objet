@@ -1,7 +1,10 @@
 package listes;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
+
+import tri.ComparatorHabitant;
 
 public class TestVilles {
 
@@ -16,6 +19,8 @@ public class TestVilles {
 		arrayVille.add(new Ville("Pau", 77200));
 		arrayVille.add(new Ville("Marseille", 850700));
 		arrayVille.add(new Ville("Tarbes", 40600));
+		
+		Collections.sort(arrayVille, new ComparatorHabitant());
 
 		Ville maxHab = arrayVille.get(0);
 		for (Ville villes : arrayVille) {
