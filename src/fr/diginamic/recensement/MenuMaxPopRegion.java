@@ -16,7 +16,7 @@ public class MenuMaxPopRegion extends MenuService {
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
 		List<Ville> arrayVille = recensement.getArrayVille();
-		String valueScanner = scanner.next();
+		//String valueScanner = scanner.next();
 		HashMap<String, Integer> comptageRegion = new HashMap<>();
 		for (Ville villes : arrayVille) {
 			String region = villes.getCodeRegion();

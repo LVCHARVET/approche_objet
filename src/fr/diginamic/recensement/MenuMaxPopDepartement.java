@@ -16,7 +16,7 @@ public class MenuMaxPopDepartement extends MenuService {
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
 		List<Ville> arrayVille = recensement.getArrayVille();
-		String valueScanner = scanner.next();
+		//String valueScanner = scanner.next();
 		HashMap<String, Integer> comptageDepartement = new HashMap<>();
 		for (Ville villes : arrayVille) {
 			String departement = villes.getCodeDepartement();

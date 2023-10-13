@@ -5,7 +5,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
@@ -18,14 +17,14 @@ public class Application {
 
 		List<String> lines = Files.readAllLines(pathfile);
 
-		String firstLine = null;
+		//String firstLine = null;
 
 		for (int i = 0; i < lines.size(); i++) {
 
 			String line = lines.get(i);
 			String[] tokens = line.split(";");
 
-			firstLine = lines.get(0);
+			//firstLine = lines.get(0);
 
 			if (i > 1) {
 

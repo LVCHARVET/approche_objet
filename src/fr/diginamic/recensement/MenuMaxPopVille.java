@@ -16,7 +16,7 @@ public class MenuMaxPopVille extends MenuService {
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
 		List<Ville> arrayVille = recensement.getArrayVille();
-		String valueScanner = scanner.next();
+		//String valueScanner = scanner.next();
 		HashMap<String, Integer> comptageVille = new HashMap<>();
 		for (Ville villes : arrayVille) {			
 			comptageVille.put(villes.getNomCommune(), villes.getPopTotale());			
