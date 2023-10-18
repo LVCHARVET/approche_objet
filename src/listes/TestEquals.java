@@ -3,8 +3,8 @@ package listes;
 public class TestEquals {
 
 	public static void main(String[] args) {
-		Ville ville1 = new Ville("Chartres", 44000);
-		Ville ville2 = new Ville("Chartres", 44000);
+		Ville ville1 = new Ville("Chartres", 44000, Continent.EUROPE);
+		Ville ville2 = new Ville("Chartres", 44000, Continent.EUROPE);
 		
 		boolean result = ville1.equals(ville2);
 		

@@ -5,10 +5,12 @@ import java.util.Objects;
 public class Ville implements Comparable<Ville> {
 	String nom;
 	int nbHabitants;
+	Continent continent;
 
-	public Ville(String nom, int nbHabitants) {
+	public Ville(String nom, int nbHabitants, Continent continent) {
 		this.nom = nom;
 		this.nbHabitants = nbHabitants;
+		this.continent = continent;
 	}
 
 	@Override
@@ -32,7 +34,7 @@ public class Ville implements Comparable<Ville> {
 
 	@Override
 	public String toString() {
-		return "Ville [nom=" + nom + ", nbHabitants=" + nbHabitants + "]";
+		return "Ville [nom=" + nom + ", nbHabitants=" + nbHabitants + ", continent=" + continent + "]";
 	}
 
 	public String getNom() {
@@ -49,7 +51,14 @@ public class Ville implements Comparable<Ville> {
 
 	public void setNbHabitants(int nbHabitants) {
 		this.nbHabitants = nbHabitants;
+	}
 
+	public Continent getContinent() {
+		return continent;
+	}
+
+	public void setContinent(Continent continent) {
+		this.continent = continent;
 	}
 
 }
