@@ -19,4 +19,13 @@ public enum Saison {
 		return ordre;
 	}
 
+	public static Saison getSaisonByLibelle(String libelle) {
+		for (Saison saison : values()) {
+			if (saison.getLibelle().equalsIgnoreCase(libelle)) {
+				return saison;
+			}
+		}
+		return null;
+	}
+
 }
